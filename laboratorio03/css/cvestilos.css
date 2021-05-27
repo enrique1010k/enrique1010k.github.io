@@ -1,0 +1,164 @@
+/* DISEÑO: MINIMALISTA */
+/* 8.- Importando fuentes de Google */
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+
+@font-face {
+  font-family: "Balsamiq Sans", cursive;
+  src: url("/fonts/BalsamiqSans-Regular.ttf");
+}
+/* 1.- Maquetacion del curriculum vitae */
+.contenedor {
+  width: 900px;
+  height: 1000px;
+  background-color: gray;
+  margin: auto;
+}
+.esquinaizquierda {
+  width: 250px;
+  height: 150px;
+  background-color: rgb(0, 45, 68);
+}
+
+.panelizquierdo {
+  width: 250px;
+  height: 850px;
+  background-color: rgb(0, 102, 163);
+}
+
+/* 2.- Añadiendo padding al contenido derecho, se tiene que tener en cuenta el "Padding", se recomienda tener una "regla virtual" de pixeles */
+.contenidoderecho {
+  width: 600px;
+  /* el width es 650px, pero con el padding, que aumenta el espacio, se tiene que restar 50px (espaciado de 25px a la izquierda + espaciado de 25px a la derecha)como resultado da 600px */
+  height: 950px;
+  /* el height es 1000px, pero con el padding, se tiene que restar 50px como resultado da 950px */
+  background-color: rgb(0, 68, 102);
+  margin-left: 250px;
+  margin-top: -1000px;
+  position: absolute;
+  padding: 25px;
+}
+.marco1 {
+  background-color: rgb(0, 138, 204);
+  padding: 25px;
+}
+.marco2 {
+  background-color: rgb(100, 200, 253);
+  padding: 25px;
+  /* Se establece una altura para el marco 2 pues dentro va tener texto, teniendo en cuenta el Padding para el marco 1 y el contenido derecho se debe restar 100px y tambien cuenta el padding del marco 2, que se debe restar 50px más, como resultado da 150px en total que deben ser restados del contenido derecho*/
+  height: 850px;
+}
+
+/* 3.- Colocando la foto en la esquina izquierda */
+img {
+  width: 165px;
+  height: 215px;
+  border: solid 8px rgb(0, 45, 68);
+  border-radius: 5px;
+  /* calculando el margin-left con el width de la esquina izquierda menos el width de la foto, luego dividiendo el resultado entre 2 y por ultimo se resta del resultado el grosor del borde
+  (250 - 165)/2 - 8 = 34.5*/
+  margin-left: 34.5px;
+  margin-top: 34.5px;
+}
+
+/* 4.- Aplicando estilos al panel izquierdo */
+.textoizquierdo {
+  /* Añadiendo espaciado, no afecta al tamaño de la caja, el espaciado superior debe ser mayor, 150px debe ser suficiente */
+  padding: 150px 15px 15px;
+  /* Texto e iconos justificados */
+  text-align: justify;
+  color: white;
+}
+
+.fa-facebook-square {
+  font-size: 18px;
+}
+/* 5.- Añadiendo estilos a los hipervinculos del panel izquierdo, solo se tomo 2 clases, una para alineacion central del texto y otro para el estilo CSS del hipervinculo */
+
+.hipervinculo {
+  text-align: center;
+}
+a.estilohipervinculo:link,
+a.estilohipervinculo:visited {
+  background-color: rgb(0, 68, 102);
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+}
+a.estilohipervinculo:hover,
+a.estilohipervinculo:active {
+  background-color: rgb(0, 138, 204);
+}
+/* 6.- Añadiendo estilos al texto del marco 2 */
+.titulo {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  /* Aqui va la fuente de google */
+  font-family: "Balsamiq Sans";
+  font-size: 32px;
+  font-style: bolder;
+}
+.subtitulo {
+  margin-top: -5px;
+  margin-bottom: 20px;
+  font-family: "Balsamiq Sans";
+  font-size: 26px;
+  font-style: bolder;
+}
+.texto1 {
+  text-align: justify;
+}
+.subtitulo2 {
+  margin-bottom: -10px;
+  font-family: "Balsamiq Sans";
+  font-size: 22px;
+  font-style: bolder;
+}
+ul {
+  list-style-type: square;
+}
+ul li {
+  list-style-position: outside;
+  margin-left: -20px;
+}
+/* 7.- Añadiendo estilos a la tabla */
+table {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+thead th,
+tbody td {
+  border: 2px solid;
+  padding: 3px;
+}
+/* El background color aplica bordes para el fondo, el border color para los bordes y el texto y el color se aplica solo para el texto */
+table thead th {
+  background-color: black;
+  border-color: black;
+  color: white;
+}
+.fa-star {
+  font-size: 16px;
+}
+.exp {
+  text-align: center;
+}
+table tbody tr:hover {
+  background-color: white;
+}
+.bajo {
+  text-decoration: none;
+  color: black;
+}
+.bajo:hover {
+  background-color: rgb(0, 138, 204);
+  padding: 3px;
+  border-radius: 10px;
+  font-style: bolder;
+  color: white;
+}
