@@ -1,4 +1,4 @@
-body{
+ody{
     margin: 0;
 }
 
@@ -8,7 +8,8 @@ ul{
     padding: 0;
     width: 15%;
     background-color: gainsboro;
-    position: fixed;
+    /* Se debe desactivar el "position: fixed", esto causa que no aparesca una regla de desplazamiento hacia abajo*/
+    /* position: fixed; */
     overflow: auto;
     border: 1px solid #555;
 }
