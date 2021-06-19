@@ -1,22 +1,32 @@
-ody{
+body{
     margin: 0;
+    background-color:rgb(137, 196, 252);
 }
-
+h1{
+    font-size: 36px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(14, 30, 83)
+}
+h2{
+    font-size: 24px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(14, 30, 83)
+}
 ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 15%;
-    background-color: gainsboro;
+    background-color: rgb(190, 239, 255);
     /* Se debe desactivar el "position: fixed", esto causa que no aparesca una regla de desplazamiento hacia abajo*/
     /* position: fixed; */
     overflow: auto;
-    border: 1px solid #555;
+    border: 4px solid rgb(9, 44, 141);
 }
 
 li{
     text-align: center;
-    border: 1px solid #555;
+    border: 1px solid rgb(9, 44, 141);
 }
 
 
@@ -28,12 +38,19 @@ li a{
 }
 
 li a.activo{
-    background-color: green;
+    background-color: rgb(14, 30, 83);
     color: white;
 }
 
 /* not() = excepcion */
 li a:hover:not(.activo){
-    background-color: #555;
+    background-color: rgb(39, 71, 179);
     color: white;
+}
+
+.imagen1{
+    height: 200px;
+    border: 3px solid black;
+    margin: 10px; 
+    float: right;
 }
