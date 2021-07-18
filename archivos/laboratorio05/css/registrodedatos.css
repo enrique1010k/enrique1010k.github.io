@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(/img/fondoregistro.jpg);
+}
+.contenedor{
+    background-color: rgba(18, 174, 221, 0.329);
+    width: 900px;
+    max-width: 100%;
+    margin: auto;
+}
+h1{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin-top: 24px;
+    color: white
+}
+.formulario{
+    margin: 0 25%;
+    background-color: none;
+    padding: 10px;
+}
+.formulario label{
+    font-size: 20px;
+    font-weight: bolder;
+    color: white
+}
+.formulario input{
+    width: 98%;
+    height: 25px;
+    margin-left: 0;
+    padding: 0 2px;
+    
+}
+ #btnRegistrar{
+    width: 20%;
+    height: 25px;
+    margin: 20px 19%
+}
+#btnActualizar{
+    width: 20%;
+    height: 25px;
+}
+table{
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    background-color: black;
+    border: solid 2px black;
+    border-radius: 5px;
+    
+}
+thead{
+    background-color: rgba(53, 196, 253, 0.836);
+    font-size: 18px;
+}
+th{
+    padding: 2px 8px;
+    border: solid 1px black
+
+}
+td{
+    border-width: 2px 0;
+    background-color: white;
+    border: solid 1px black;
+    padding: 2px 10px
+
+}

@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin-top: 100px;
+    background-color: rgb(153, 54, 8);
+}
+
+h1{
+    text-align: center;
+    background-color: rgb(245, 177, 31);
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px
+
+}
+form{
+    width: 500px;
+    height: 180px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(245, 177, 31);
+    border-radius: 10px
+
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+#txtCor, #txtCon{
+    height: 30px;
+    width: 485px;
+    border: solid 2px rgb(153, 54, 8);
+    background-color: rgb(247, 213, 150);
+    border-radius: 10px;
+    padding-left: 10px;
+}
+#btnRegistrar, #btnLimpiar{
+    margin-top: 25px;
+    margin-left: 100px;
+    font-weight: bolder;
+    border: solid 2px rgb(90, 31, 4);
+    background-color: rgb(153, 54, 8);
+    color: white;
+    border-radius: 10px;
+    padding: 10px
+}
+#btnRegistrar:hover, #btnLimpiar:hover{
+    background-color: rgb(90, 31, 4);
+}

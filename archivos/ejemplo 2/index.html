@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Como primer paso para un diseño responsivo configuramos las escalas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
     <!-- Es necesario definir el description y los keywords
     description es una descripcion de tu sitio web
     keyword son palabras claves relacionas al sitio web -->
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Pagina web responsiva">
+    <meta name="keywords" content="Articulo, Lorem Ipsum">
     <title>Ejemplo 2 HTML</title>
+    <!-- Llamamos al estilo -->
+    <link rel="stylesheet" href="css/estilo.css" type="text/css"></link>
 </head>
 <body>
     <!-- Inicio del contenedor -->
-    <div>
+    <div class="contenedor">
     <!-- Inicia el Header -->
     <header>
     <!-- Inicia el Menu Principal -->
@@ -29,17 +32,17 @@
     </header>
     <!-- Fin del Header -->
     <!-- Inicia la Seccion Principal -->
-    <section>
+    <section class="principal">
         <!-- Inicia la Imagen -->
-        <div>
+        <div class="imagen">
             <img src="img/foto1.jpg" alt="Edificio moderno">
         </div>
         <!-- Fin de la Imagen -->
         <!-- Inicia Publicaciones -->
-        <section>
+        <section class="publicaciones">
             <!-- Inicia el Artículo -->
             <article>
-                <h2>Acerca de</h2>
+                <h2>Titulo del Artículo</h2>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, praesentium delectus. Nesciunt laborum assumenda, vitae doloremque nisi eius repellendus exercitationem nemo corporis provident sed eveniet cumque facere dolore accusantium facilis!
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit perspiciatis molestias voluptatem quas similique? Inventore aut nam, neque mollitia saepe modi delectus obcaecati corrupti vero sunt provident impedit, voluptatum nisi!
@@ -58,8 +61,8 @@
     <!-- Fin de la Seccion Principal -->
     <!-- Inicia los Anuncios -->
     <aside>
-        <div>
-            <h3>Artículos Destacados</h3>
+        <div class="anuncio">
+            <h3 class="tituloanuncio">Artículos Destacados</h3>
             <ul>
                 <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
                 <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
@@ -68,8 +71,8 @@
                 <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
             </ul>
         </div>
-        <div>
-            <h3>Información</h3>
+        <div class="anuncio">
+            <h3 class="tituloanuncio">Información</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, sed amet quibusdam quis doloremque nobis quas quasi iure minus quaerat placeat dicta quod excepturi minima optio, voluptas magnam! Eveniet, ex.</p>
         </div>
     </aside>
@@ -81,6 +84,5 @@
     <!-- Fin del Pie -->
 </div>
 <!-- Fin del contenedor -->
-<a href="/index.html">Menu Principal</a>
 </body>
 </html>

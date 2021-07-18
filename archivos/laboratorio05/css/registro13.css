@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0
+} 
+
+body {
+    background-color: #032f72
+}
+.contenedor{
+    background-color: rgb(25, 179, 199);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    width: 80%;
+}
+h1{
+    color: black;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.formulario{
+    background-color: rgb(120, 213, 236);
+    margin: 0 25%;
+    border-radius: 20px;
+    padding: 20px;
+    color: black;
+    font-size: 18px;
+}
+
+input{
+    width: 100%;
+    height: 20px
+}
+#cboDistrito{
+    width: 100.6%;
+    height: 24px
+
+}
+#rbMas,#rbFem,#rbOtr{
+    width: 7.5%;
+    height: 16px;
+}
+
+#chkEst{
+    width: 7.5%;
+    height: 16px;
+}
+
+#btnRegistrar, #btnActualizar{
+    width: 40%;
+    height: 30px;
+    margin-left: 4.5%;
+    margin-right: 4.5%
+}
+
+table{
+    background-color: black;
+}
+thead{
+    background-color: rgb(3, 114, 148);
+    text-align: center;
+
+
+}
+tbody{
+    background-color: rgb(181, 242, 253);
+    text-align: center;
+}
+td{
+    padding: 3px
+}
+th{
+    padding: 3px
+}

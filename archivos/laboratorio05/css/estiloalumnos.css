@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-image: url(/img/fondo-alumnos.jpg);
+    background-repeat: no-repeat;
+    background-size: 1400px;
+
+}
+
+.contenedor{
+    /* El formato de colores rgba añade transparencia al color */
+    background-color: rgba(230, 230, 230, 0.493);
+    border: solid 4px rgba(138, 138, 138, 0.493);
+    border-radius: 10px;
+    width: 800px;
+    margin: 50px auto;
+}
+h1{
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Fredoka One';
+    font-size: 30x;
+}
+
+form{
+    width: 400px;
+    margin: auto;
+    padding: 10px
+}
+label{
+    font-size: 16px;
+    font-family: 'Public Sans', sans-serif;
+}
+#txtNom, #txtApe, #txtDni{
+    width: 280px;
+    height: 20px;
+    padding-left: 5px
+}
+#txtNom{
+    margin-left: 30px;
+}
+#txtApe{
+    margin-left: 27px;
+}
+#txtDni{
+    margin-left: 74px;
+}
+#cboCurso{
+    width: 289px;
+    height: 25px;
+    padding-left: 5px;
+    margin-left: 54px
+}
+
+#rbM, #rbT, #rbN{
+    margin-left: 25px;
+    padding-left: 20px;
+}
+#rbM{
+    margin-left: 75px;
+}
+#chkEst{
+    margin-left: 64px;
+}
+
+h2{
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    background-color: rgb(170, 24, 24);
+    color: white;
+    border-radius: 10px; 
+    padding: 1px;
+}
+#btnRegistrar, #btnLimpiar{
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+table,th{
+    border: 2px solid rgb(34, 138, 235);
+    margin: auto;
+    background-color: rgb(34, 138, 235);
+    font-family: 'Public Sans', sans-serif;
+
+}
+th{
+    padding: 5px 10px;
+    background-color: rgb(34, 138, 235);
+    color: white;
+}
+
+tbody,td{
+    text-align: center;
+    background-color: white;
+    padding: 0 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#btnRegistrar{
+    margin-left: 130px;
+}
+
+#btnRegistrar, #btnLimpiar{
+    color: white;
+    background-color: rgb(30, 160, 13);
+    border: none;
+    border: solid 2px rgb(27, 87, 9);
+    border-radius: 10px;
+    padding: 4px;
+}
+
+#btnRegistrar:hover, #btnLimpiar:hover{
+    background-color: rgb(81, 223, 37);
+    color: black
+}
+
+#btnRegistrar:active, #btnLimpiar:active{
+    background-color: rgb(27, 87, 9);
+    color: white;
+}
